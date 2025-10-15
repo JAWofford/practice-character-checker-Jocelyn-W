@@ -15,7 +15,7 @@ function containsCapital(passwordInput){
 //check if a string contains at least one number.
 function containsNumber(passwordInput){
     for(const char of passwordInput){
-        if(!isNaN(char)){
+        if(!isNaN(char) && char!==" "){
             return true; //had to look up isNan.  number found, exit loop
         }
     }
